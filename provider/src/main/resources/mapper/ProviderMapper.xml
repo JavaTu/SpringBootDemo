@@ -7,6 +7,6 @@
     </insert>
 
     <select id="queryUser" resultType="com.hjp.provider.entity.UserEntity">
-        select username, create_time as createTime from user where username = #{userName}
+        select username, create_time from user where username = #{userName}
     </select>
 </mapper>

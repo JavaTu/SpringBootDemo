@@ -4,7 +4,7 @@ SpringBoot集成Demo，mybatis、dubbo、redis、rocketMq、拦截器、过滤�
 
 
 # 已集成
-- Mybatis
+- Mybatis-plus
 - Dubbo 示例
 
 

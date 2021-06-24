@@ -16,8 +16,15 @@ spring:
         max-active: 8
     timeout: 10000
 
-mybatis:
+# mybatis-plus
+mybatis-plus:
+  type-aliases-package: com.hjp.provider.entity
   mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
 
 rocketmq:
   name-server: 127.0.0.1:9876
