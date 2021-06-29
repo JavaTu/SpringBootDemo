@@ -22,6 +22,7 @@
     <modules>
         <module>provider</module>
         <module>consumer</module>
+        <module>test</module>
     </modules>
 
     <dependencies>
