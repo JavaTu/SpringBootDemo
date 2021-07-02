@@ -3,7 +3,6 @@ package com.hjp.test;
 import com.hjp.test.service.TestService1;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -26,7 +25,6 @@ class TestApplicationTests {
      */
     @Test
     void testRequiresNew() {
-        //testService.methodA();
-        testService.methodA1();
+        testService.methodA();
     }
 }

@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 
 @Component
+@Transactional(propagation = Propagation.REQUIRED)
 public class TestService1 {
 
     @Resource
@@ -16,7 +17,6 @@ public class TestService1 {
     @Resource
     private TestService2 testService2;
 
-    @Transactional(propagation = Propagation.REQUIRED)
     public void methodA () {
         // 当前没有事务，新建一个事务
         testService2.methodB();
@@ -24,7 +24,6 @@ public class TestService1 {
         throw new RuntimeException("test");
     }
 
-    @Transactional(propagation = Propagation.REQUIRED)
     public void methodA1 () {
         // 当前没有事务，新建一个事务
         Long id = testMapper.queryId();

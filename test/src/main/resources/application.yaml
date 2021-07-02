@@ -19,6 +19,5 @@ mybatis-plus:
       logic-not-delete-value: 0
 
 logging:
-  file:
-    path: D:/logs/hjp
+  config: classpath:logback-spring.xml
 

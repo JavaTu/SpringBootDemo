@@ -3,12 +3,12 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    url: jdbc:mysql://172.20.13.234:3306/test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
   redis:
-    host: 127.0.0.1
+    host: 172.20.13.234
     port: 6379
     password: 123456
     jedis:
@@ -27,7 +27,7 @@ mybatis-plus:
       logic-not-delete-value: 0
 
 rocketmq:
-  name-server: 127.0.0.1:9876
+  name-server: 172.20.13.234:9876
   producer:
     group: test-producer-group
 
@@ -35,7 +35,7 @@ dubbo:
   application:
     name: test-api
   registry:
-    address: zookeeper://127.0.0.1:2181
+    address: zookeeper://172.20.13.234:2181
   protocol:
     name: dubbo
   scan:
